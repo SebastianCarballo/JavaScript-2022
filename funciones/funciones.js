@@ -53,6 +53,36 @@ con el return se detiene la ejecucion de la funcion */
 //Una funcion recibe valores
 //parametros
 
-function saludar(nombre,edad){
-
+function saludar(nombre = "Desconocido",edad = 0){//Estos son los parametros de una funcion
+console.log(`Hola mi nombre es ${nombre} y tengo ${edad} años.`);
 }
+
+saludar("Benjamin",5);
+saludar();
+
+//Funciones declaradas vs funciones Expresadas
+
+funcionDeclarada();//Esto es hoisting
+//Esto sucede con funciones declaradas
+
+function funcionDeclarada(){
+    console.log("Esto es una funcion declarada, puede invocarse en cualquier parte de nuestro codigo, incluso antes de que la funcion sea declarada.");
+}
+
+funcionDeclarada();
+
+//existe  otra manera de declara las funciones y es utilizar las funciones como expresiones, es decir crear una funcion y asignarsela dinamicamente a una variable.
+
+
+//Usamos const por que le valor de esta contante no va cambiar
+//Cuando creamos funciones expresadas lo mas recomedable es usar const y no let 
+
+//Funcion anonima
+//una funcion que no tiene nombre
+const funcionExpresada = function (){
+    console.log("Esto es una funcion expresada, es decir una funcion que se le ha asignado como valor a una variable, si invocamos esta funcion antes de su definicion  JS nos dira 'cant access lexical declaration funcionExpresada before initialization'.");
+} 
+//Aca ya no es necesario poner el nombre de la funcion por que ya el nombre es el que le dimos a la variable 
+funcionExpresada();
+
+//Ser ordenados en el codigo
