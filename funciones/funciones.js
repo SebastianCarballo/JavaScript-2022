@@ -21,4 +21,38 @@ function estoEsUnaFunction(){
     console.log("Tres");
     
 }
-//Esat funcion ya esta declarada esperando ser llamada
+//Esat funcion ya esta declarada esperando ser llamada, ser invocada, entonces la mandamos a llamar
+
+
+
+
+//Invocacion de funcion
+/* estoEsUnaFunction();
+estoEsUnaFunction();
+estoEsUnaFunction();
+estoEsUnaFunction(); */
+//un parentesis en unja funcion significa que se va ejecutar
+function unaFuncionQueDevuelveValor(){
+    console.log("Uno");
+    console.log("Dos");
+    console.log("Tres");
+    return "La funcion ha retornado una Cadena de texto"
+}
+
+let valorDeFuncion = 
+unaFuncionQueDevuelveValor();
+console.log(valorDeFuncion);
+//Cuando una funcion devuelve valor devemos utilizar una palabra reservada que se llama "return",
+//una funcion puede devolver cualquier tipo de datos, ya sea primitivo o compuesto
+
+// == importante
+/* Cuando una funcion dentro del cuerpo de la misma funcion tiene la palabra "return" en ese momento ignora todas las lineas de codigo  que sobran y retorna solo ese valor como valor de la funcion,
+todo lo que esta antes del return se ejecuta y todo lo que esat despues se ignora
+con el return se detiene la ejecucion de la funcion */
+
+//Una funcion recibe valores
+//parametros
+
+function saludar(nombre,edad){
+
+}
